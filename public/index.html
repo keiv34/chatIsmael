@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Practica de evaluacion Socket Ismael Antonio Gonzalez</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div id="panel-bienvenida">
+        <h2>Practica de evaluacion usando Sockets de comunicacion - Ismael Antonio Gonzalez 703</h2>
+        <input id="persona" type="text" placeholder="Ingresa tu nombre">
+        <button id="ingresar">Ingresar al chat</button>
+    </div>
+
+    <div id="app-chat" style="display:none;">
+        <h2>Practica de evaluacion 1er parcial - Ismael Antonio Gonzalez 703</h2>
+        <h3 id="clase">Ismael antonio 703" (chat con socket)</h3>
+        <div id="ventana-mensajes">
+            <div id="output"></div>
+        </div>
+        <div id="escribiendo-mensaje"></div>
+        <form id="form-mensaje">
+            <input id="mensaje" type="text" placeholder="Ingresa un mensaje">
+            <button id="enviar" type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <audio id="sonido-notificacion" src="notificacion.mp3" preload="auto"></audio>
+
+    <script src="chat.js"></script>
+</body>
+</html>
